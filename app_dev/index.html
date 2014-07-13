@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <link rel="stylesheet" href="resources/styles/app.css">
+    </head>
+
+    <body>
+        <nav class="sidebar-navigation">
+
+        </nav>
+
+        <section id="alerts"></section>
+
+
+        <section id="segues">
+
+            <!-- ACCUEIL -->
+            <section id="home" class="segue segue-left segue-active">
+                <header class="header-bar">
+                    <span class="header-bar-button header-bar-button-left">
+                        <span class="ion-navicon"></span>
+                    </span>
+                    <span data-segue="search" class="header-bar-button header-bar-button-right-search">
+                        <span class="ion-ios7-search"></span>
+                    </span>
+
+                    <h3 class="header-bar-title header-bar-logo">Repo<span>leak</span></h3>
+                </header>
+            </section>
+
+            <!-- SEARCH -->
+            <section id="search" class="segue segue-right">
+                <header class="header-bar">
+                    <span data-segue="home" class="header-bar-button header-bar-button-left">
+                        <span class="ion-ios7-arrow-back"></span>
+                    </span>
+
+                    <input type="text" class="input-search">
+                </header>
+                <br><br><br><br><br>
+                <a data-action="alert" data-title="Bravo" data-message="Coucou" data-type="success">Alerte</a>
+            </section>
+
+        </section>
+
+        <script type="text/javascript" src="library/frameworks/jquery.js"></script>
+        <script type="text/javascript" src="library/frameworks/fastclick.js"></script>
+        <script type="text/javascript" src="library/frameworks/hammer.js"></script>
+        <script type="text/javascript" src="library/frameworks/handlebars.js"></script>
+
+        <script type="text/javascript" src="library/animations/segues.js"></script>
+        <script type="text/javascript" src="library/animations/alerts.js"></script>
+
+        <script type="text/javascript" src="library/classes/segues.js"></script>
+
+        <script type="text/javascript">
+            FastClick.attach(document.body);
+        </script>
+    </body>
+</html>
